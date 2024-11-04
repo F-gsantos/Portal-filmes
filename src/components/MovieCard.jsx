@@ -27,7 +27,7 @@ export default function MovieCard({ search }) {
           />
           <h3>{filme.title}</h3>
           <button
-            className="p-3 bg-purple-500"
+            className="p-3 bg-red-700"
             onClick={() => navigate(`/movies/${filme.id}`)}
           >
             Saiba mais

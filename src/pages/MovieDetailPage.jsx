@@ -76,7 +76,7 @@ export default function MovieDetailPage() {
       <p className="mt-[-8px] text-gray-400 mb-4">{filme.release_date}</p>
       <div className="flex gap-4 mb-8">
         <button
-          className="p-4 bg-black rounded-lg w-40 transition duration-300 hover:text-purple-500 hover:border-purple-500 glow border-white border"
+          className="p-4 bg-black rounded-lg w-40 transition duration-300 hover:text-red-700 hover:border-red-700 glow border-white border"
           onClick={() => {
             if (verDepois.some(e => e.title === filme.title)) {
               window.alert("esse filme já esta na lista");
@@ -90,7 +90,7 @@ export default function MovieDetailPage() {
           Ver depois
         </button>
         <button
-          className="p-4 bg-black rounded-lg w-40 transition duration-300 hover:text-purple-500 hover:border-purple-500 glow border-white border"
+          className="p-4 bg-black rounded-lg w-40 transition duration-300 hover:text-red-700 hover:border-red-700 glow border-white border"
           onClick={() => {
             if (assistidos.some(e => e.title === filme.title)) {
               window.alert("esse filme já esta na lista");
