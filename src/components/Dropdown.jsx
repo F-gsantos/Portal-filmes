@@ -38,7 +38,7 @@ const Dropdown = ({ sendDataToParent }) => {
       <div>
         <button
           onClick={toggleDropdown}
-          className="inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="inline-flex justify-between w-full rounded-md border border-red-700 shadow-sm px-4 py-2 bg-black text-sm font-medium text-red-700 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
           aria-haspopup="true"
           aria-expanded={isOpen}
         >
@@ -50,13 +50,13 @@ const Dropdown = ({ sendDataToParent }) => {
       </div>
 
       {isOpen && (
-        <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-red-700 ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {genres.map((genre) => (
               <button
                 key={genre.id}
                 onClick={() => handleSelect(genre)}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                className="block px-4 py-2 text-sm text-red-700 hover:bg-black w-full text-left"
                 role="menuitem"
               >
                 {genre.name}
