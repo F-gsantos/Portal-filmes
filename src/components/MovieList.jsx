@@ -3,10 +3,10 @@ export default function MovieList({arr, text}) {
       <>
         {arr.length != 0 ? (
           
-          <div className="flex gap-4 mb-8 ">
+          <div className="flex gap-5 mb-8 ">
   
             {arr.map((data) => (
-              <div key={data.id} className="gap-5 flex flex-col justify-end">
+              <div key={data.id} className="gap-10 flex flex-col justify-end">
                 <h3>{data.title}</h3>
                 <img
                   src={`https://image.tmdb.org/t/p/w185${data.poster_path}`}
@@ -16,7 +16,7 @@ export default function MovieList({arr, text}) {
             ))}
           </div>
         ) : (
-          <h2>Você não tem nenhum filme {text}</h2>
+          <h2> Sem filmes {text}</h2>
         )}
       </>
     );
