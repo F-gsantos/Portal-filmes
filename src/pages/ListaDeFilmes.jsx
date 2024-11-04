@@ -13,9 +13,9 @@ function ListaDeFilmes() {
 
   return (
     <>
-      <h2 className="font-bold text-2xl mb-4">Assistidos</h2>
+      <h2 className="font-serif text-2xl mb-4">Assistidos</h2>
       <MovieList arr={assistidos} text="Assistidos" />
-      <h2 className="font-bold text-2xl mb-4">Ver Depois</h2>
+      <h2 className="font-serif text-2xl mb-4">Ver Depois</h2>
       <MovieList arr={verDepois} text="Ver Depois" />
     </>
   );
